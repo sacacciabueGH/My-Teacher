@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
     
 
-    const usuarioLog = "admin";
+    const usuarioLog = "estudiante";
     btnLogin.addEventListener("click", function(event){
         event.preventDefault();
         if(userEmail.value == usuarioLog && userPassword.value == usuarioLog){

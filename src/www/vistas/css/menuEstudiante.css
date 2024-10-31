@@ -19,10 +19,7 @@
     border: none;
     background-color: white;
 }
-.icono-notificacion{
-    width: 24px;
-    margin-right: 10px;
-}
+
 
 .menu-usuario{
     background-color: #F7F8FA;
@@ -124,11 +121,11 @@
     border-radius: 20px 20px 0 0;
     box-shadow: 0 2px 30px rgba(0, 0, 0, 0.1);
     background-color: #ffffff;
-    padding-bottom: 12px;
+    padding-bottom: 26px;
 }
 
 .scroll-profesores{
-    max-height: 361px;
+    max-height: 367px;
     overflow-y: auto;
 }
 
