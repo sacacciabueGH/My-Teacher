@@ -39,9 +39,9 @@
 }
 .btnVerPerfil{
     background-color: #4AA366;
-    color: black;
-    width: 23%;
-    margin-top: 12px;
+
+    padding: 7px;
+
     height: 31px;
     margin: 19px;
     border-radius: 4px;
@@ -128,10 +128,34 @@
 }
 
 .scroll-profesores{
-    max-height: 385px;
+    max-height: 361px;
     overflow-y: auto;
 }
 
 .design-profesor2{
     margin-bottom: 2px;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    z-index: 10;
+}
+
+.dropdown-menu a {
+    color: #333;
+    text-decoration: none;
+    padding: 5px 10px;
+    display: block;
+}
+
+.dropdown-menu a:hover {
+    background-color: #bbbbbb;
 }

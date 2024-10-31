@@ -7,8 +7,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/menu.css">
-    <title>Menu</title>
+    <link rel="stylesheet" href="./css/menuEstudiante.css">
+    <title>Menu Estudiante</title>
 </head>
 <body>
     <nav class="nav-menu">
@@ -17,19 +17,23 @@
         </div>
         <div>
             <button><img src="../img/notificacion.png" alt="notificaciones" class="icono-notificacion"></button>
-            <button><img src="../img/botonH.png" alt="botonH"></button>
+            <button  id="botonH"><img src="../img/botonH.png" alt="botonH"></button>
+
+            <div id="dropdown-menu" class="dropdown-menu">
+                <a href="logout.html">Cerrar sesión</a>
+            </div>
         </div>
     </nav>
     
         <div class="menu-usuario">
             <div class="h1-verPerfil">
                 <h1 class="h1-menu">Hola usuario!</h1>
-                <button class="btnVerPerfil">Ver Perfil</button>
+                <a href="./perfilEstudiante.html"><button class="btnVerPerfil">Ver Perfil</button></a>
             </div>
             <div class="menu-usuario2">
                 <img src="../img/estrella.png" alt="estrella">
                 <p>5</p>
-                <img src="../img/mensajes.png" alt="mensajes">
+                <a href="./mensajesEstudiante.html"><img src="../img/mensajes.png" alt="mensajes" id="mensajeIcono"></a>
             </div>
             <p class="favoritos-size">Favoritos</p>
             <a href="./buscarProfesor.html"><button class="btnBuscarProfesores">Buscar profesores</button></a>
@@ -138,6 +142,6 @@
     </div>
     
     
-    <script src="../controladores/menu.js"></script>
+    <script src="../controladores/menuEstudiante.js"></script>
 </body>
 </html>

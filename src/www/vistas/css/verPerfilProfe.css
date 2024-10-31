@@ -92,14 +92,12 @@
     box-shadow: 0 2px 30px rgba(0, 0, 0, 0.30);
     margin-top: -11px;
     background-color: #ffffff;
-    padding-bottom: 10px;
 }
 
 .footer-design{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    padding-top: 13px;
 }
 .footer-design img{
     width: 40px;

@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function(){
     btnLogin.addEventListener("click", function(event){
         event.preventDefault();
         if(userEmail.value == usuarioLog && userPassword.value == usuarioLog){
-            window.location.href = "./menu.html";
+            window.location.href = "./menuEstudiante.html";
         }
     })
 })
