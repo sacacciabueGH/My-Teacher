@@ -1,5 +1,6 @@
 import express from 'express';
-import db from './src/DB/db.js';
+import alumnoRoutes from './src/routes/alumnoRoute.js';
+import profesorRoutes from './src/routes/profesorRoute.js';
 
 const app = express();
 const PORT = 8080;
@@ -9,15 +10,7 @@ const server = app.listen(PORT,()=>{
     console.log('Escuchando en '+PORT);
 })
 
-app.get('/usuarios', (req, res) => {
-    const query = 'SELECT * FROM usuarios'; 
-    db.query(query, (err, results) => {
-        if (err) {
-            console.error('Error al obtener datos:', err);
-            res.status(500).send('Error al obtener datos');
-            return;
-        }
-        res.json(results);
-    });
-});
+app.use(express.json());
+app.use('/alumnos', alumnoRoutes);
+app.use('/profesores', profesorRoutes);
 

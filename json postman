@@ -1,0 +1,13 @@
+{
+    "email" : "ruben@gmail.com",
+    "password" : "rub455",
+    "nombre" : "Ruben",
+    "apellido" : "Larocca",
+    "ciudad" : "Santa fe",
+    "direccion" : "hbgoi 451",
+    "telefono" : "29863289",
+    "materia" : "inovac",
+    "disponibilidad" : 13,
+    "descripcion" : "Tengo 42 anos y soy profesor",
+    "foto": "foto.png"
+}
