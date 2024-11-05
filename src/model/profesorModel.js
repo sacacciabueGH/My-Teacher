@@ -28,3 +28,23 @@ export const obtenerProfesorPorMateria = (materia,callback) =>{
         callback(null,results);
     })
 }
+
+export const obtenerProfesorPorHora = (disponibilidad,callback)=>{
+    const query = 'SELECT id FROM profesores WHERE disponibilidad = ?';
+    db.query(query,[disponibilidad],(err,results)=>{
+        if(err) return callback(err,null);
+        callback(null,results);
+    })
+}
+
+export const logueoProfesor = (email, callback)=>{
+    const query = 'SELECT * FROM profesores WHERE email = ?';
+    db.query(query,[email],(err,results)=>{
+        if(err){
+            console.error("Error al obtener email");
+            return callback(err,null);
+        }else{
+            callback(null,results);
+        } 
+    })
+}
