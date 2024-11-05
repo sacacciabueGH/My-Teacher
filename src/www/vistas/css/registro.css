@@ -12,12 +12,15 @@
     margin-top: 10px;
 }
 .login_h1{
+    display: flex;
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
-    margin-top: 5%;
-    margin-left: 5%;
+    margin-top: 20%;
+    /* margin-left: 6%; */
+    align-items: center;
+    justify-content: center;
 }
 .inputs_login{
     display: flex;
