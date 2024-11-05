@@ -1,0 +1,163 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+.nav-menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 4%;
+    color: #1D4D4F;
+}
+.nav-menu p{
+    font-weight: 600;
+}
+.nav-menu button{
+    border: none;
+    background-color: white;
+}
+
+#mensajeIcono{
+    margin-right: 11px;
+}
+
+.menu-usuario{
+    background-color: #F7F8FA;
+    
+}
+.h1-menu{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    margin-top: 5%;
+    margin-left: 5%;
+    font-size: 29px;
+}
+.btnVerPerfil{
+    background-color: #4AA366;
+
+    padding: 7px;
+
+    height: 31px;
+    margin: 19px;
+    border-radius: 4px;
+    border: none;
+    color: white;
+}
+
+.btnVerPerfil:hover{
+    background-color: #37834f;
+}
+
+.h1-verPerfil{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: row;
+    box-shadow: 0 -5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.menu-usuario2{
+    display: flex;
+    align-items: center;
+    margin-left: 5%;
+}
+.menu-usuario2 p{
+    margin-left: 4px;
+    margin-right: 40px;
+}
+.favoritos-size{
+    margin-left: 21px;
+    font-size: 12px;
+}
+.btnBuscarProfesores{
+    background-color: #4AA366;
+    color: white;
+    width: 75%;
+    margin-top: 44%;
+    height: 46px;
+    margin-bottom: 12%;
+    border-radius: 4px;
+    border: none;
+    margin-left: 12%;
+}
+
+.btnVerProfesor{
+    background-color: #4AA366;
+    color: black;
+    width: 23%;
+    margin-top: 12px;
+    height: 28px;
+    margin: 19px;
+    border-radius: 4px;
+    border: none;
+    color: white;
+}
+.profesor-design{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.estrella-valoracion{
+    display: flex;
+    flex-direction: row;
+    margin-left: 17%;
+    margin-top: -17px;
+}
+.estrella-valoracion img{
+    width: 18px;
+}
+
+.profesores-recomendados{
+    margin-left: 5%;
+    font-weight: 600;
+    margin-top: -16px;
+    padding-top: 10px;
+}
+
+.profesores-menu1{
+    border-radius: 20px 20px 0 0;
+    box-shadow: 0 2px 30px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    padding-bottom: 26px;
+    height: 465px;
+}
+
+.scroll-profesores{
+    max-height: 426px;
+    overflow-y: auto;
+}
+
+.design-profesor2{
+    margin-bottom: 2px;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    z-index: 10;
+}
+
+.dropdown-menu a {
+    color: #333;
+    text-decoration: none;
+    padding: 5px 10px;
+    display: block;
+}
+
+.dropdown-menu a:hover {
+    background-color: #bbbbbb;
+}
+

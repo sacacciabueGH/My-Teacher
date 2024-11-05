@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/icono.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/registro.css">
+    <title>Mi perfil</title>
+</head>
+<body>
+    <a href="./menuEstudiante.html"><img  class="atras" src="../img/atras.png" alt="atras"></a>
+    <h1 class="login_h1">Mi perfil</h1>
+    <div class="inputs_login">
+        <form action="">
+            <label>
+                <input type="email" name="email" id="email" placeholder="Modificar E-mail">
+            </label>
+            <br>
+            <label>
+                <input type="password" name="password" id="password" placeholder="Modificar Password">
+            </label>
+            <br>
+            <label>
+                <input type="text" name="nombre" id="nombre" placeholder="Modificar Nombre">
+            </label>
+            <br>
+           <label>
+                <input type="text" name="apellido" id="apellido" placeholder="Modificar Apellido">
+           </label>
+            <br>
+            <label for="nivelEducativo">
+                <select name="niveles" id="niveles">
+                    <option value="" disabled selected>Modificar Nivel Academico</option>
+                    <option value="secundario">Secundario</option>
+                    <option value="terciario">Terciario</option>
+                    <option value="universitario">Universitario</option>
+                </select>
+            </label>
+            <br>
+            <label for="">
+                <input type="text" name="ciudad" id="ciudad" placeholder="Modificar Ciudad">
+            </label>
+            <br>
+            <label for="">
+                <input type="text" name="direccion" id="direccion" placeholder="Modificar Direccion">
+            </label>
+            <br>
+            <label>
+                <input type="tel" name="telefono" id="telefono" placeholder="Modificar Telefono">
+            </label>
+            <br>
+            
+            <div class="btnCrearCuenta">
+                <button type="submit" value="enviar" class="crear_cuenta">Confirmar cambios</button>
+            </div>
+            
+        </form>
+    </div>
+</body>
+</html>

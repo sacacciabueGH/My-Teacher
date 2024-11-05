@@ -1,0 +1,132 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+.nav-menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 4%;
+    color: #1D4D4F;
+}
+.nav-menu p{
+    font-weight: 600;
+}
+.nav-menu button{
+    border: none;
+    background-color: white;
+}
+.icono-notificacion{
+    width: 24px;
+    margin-right: 10px;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    z-index: 10;
+}
+
+.dropdown-menu a {
+    color: #333;
+    text-decoration: none;
+    padding: 5px 10px;
+    display: block;
+}
+
+.dropdown-menu a:hover {
+    background-color: #bbbbbb;
+}
+
+.img-perfil{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img-perfil img{
+    box-shadow: 0 -5px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.nombre-profesor{
+    display: flex;
+    align-items: center;
+    margin-left: 13px;
+    margin-top: 5px;
+    justify-content: flex-start;
+}
+.nombre-profesor p{
+    margin-right: 5px;
+}
+
+.descripcion-profesor{
+    text-align: justify;
+    padding: 10px;
+    overflow-y: auto;
+    max-height: 127px;
+}
+
+.materias{
+    border-radius: 20px 20px 0 0;
+    box-shadow: 0 2px 30px rgba(0, 0, 0, 0.30);
+    background-color: #ffffff;
+    height: 208px;
+    margin-top: 10px;
+}
+.materias p{
+    text-align: justify;
+    font-size: 25px;
+    padding: 10px;
+    font-weight: 700;
+}
+.estrella-valoracion{
+    display: flex;
+    flex-direction: row;
+    margin-left: 11px;
+    padding-top: 7px;
+}
+.estrella-valoracion img{
+    width: 20px;
+}
+
+.contactar-profesor{
+    background-color: #4AA366;
+    color: white;
+    width: 75%;
+    margin-top: 22px;
+    height: 46px;
+    border-radius: 4px;
+    border: none;
+    margin-left: 12%;
+}
+
+.footer{
+    border-radius: 20px 20px 0 0;
+    box-shadow: 0 2px 30px rgba(0, 0, 0, 0.30);
+    margin-top: -11px;
+    background-color: #ffffff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.footer-design{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 9px;
+}
+.footer-design img{
+    width: 40px;
+}

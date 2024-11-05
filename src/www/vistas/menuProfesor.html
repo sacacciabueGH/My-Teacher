@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/icono.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/menuProfesor.css">
+    <title>Menu Profesor</title>
+</head>
+<body>
+    <nav class="nav-menu">
+        <div>
+            <p>My Teacher</p>
+        </div>
+        <div>
+            <button  id="botonH"><img src="../img/botonH.png" alt="botonH"></button>
+
+            <div id="dropdown-menu" class="dropdown-menu">
+                <a href="./login.html">Cerrar sesión</a>
+            </div>
+        </div>
+    </nav>
+    
+        <div class="menu-usuario">
+            <div class="h1-verPerfil">
+                <h1 class="h1-menu">Hola profesor!</h1>
+                <a href="./perfilProfesor.html"><button class="btnVerPerfil">Ver Perfil</button></a>
+            </div>
+
+            <a href="./casillaMensajesProfe.html"><button class="btnVerCasillaMensajes">Ver Casilla de mensajes</button></a>
+            
+        </div>
+
+    <div class="chatsAlumnos-menu1">
+        <p class="chats-recientes">Chats recientes</p>
+        <div class="scroll-chatsAlumnos"> 
+            <div class="design-alumno2">
+                <div class="alumno-design">
+                    <img src="../img/persona.png" alt="persona">
+                    <p>Santiago Cacciabue</p>
+                    <button class="btnVerAlumno" data-alumno="Santiago Cacciabue">Ver</button>
+                </div>
+            </div>
+
+            <div class="design-alumno2">
+                <div class="alumno-design">
+                    <img src="../img/persona.png" alt="persona">
+                    <p>Aiello Lautaro</p>
+                    <button class="btnVerAlumno" data-alumno="Aiello Lautaro">Ver</button>
+                </div>
+            </div>
+
+            <div class="design-alumno2">
+                <div class="alumno-design">
+                    <img src="../img/persona.png" alt="persona">
+                    <p>Fernandez Franco</p>
+                    <button class="btnVerAlumno" data-alumno="Fernandez Franco">Ver</button>
+                </div>
+            </div>
+
+            <div class="design-alumno2">
+                <div class="alumno-design">
+                    <img src="../img/persona.png" alt="persona">
+                    <p>Messi Leonel</p>
+                    <button class="btnVerAlumno" data-alumno="Messi Leonel">Ver</button>
+                </div>
+            </div>
+
+            <div class="design-alumno2">
+                <div class="alumno-design">
+                    <img src="../img/persona.png" alt="persona">
+                    <p>Hernandez Jose</p>
+                    <button class="btnVerAlumno" data-alumno="Hernandez Jose">Ver</button>
+                </div>
+            </div>
+
+            <div class="design-alumno2">
+                <div class="alumno-design">
+                    <img src="../img/persona.png" alt="persona">
+                    <p>Viglia Agustin</p>
+                    <button class="btnVerAlumno" data-alumno="Viglia Agustin">Ver</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <script src="../controladores/menuEstudiante.js"></script>
+    <script src="../controladores/menuProfesor.js"></script>
+</body>
+</html>

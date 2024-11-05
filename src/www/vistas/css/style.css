@@ -1,0 +1,16 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    background-color: #1D4D4F;
+}
+.icono{
+
+    margin-top: 60%;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+

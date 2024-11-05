@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/icono.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/buscarProfesor.css">
+    <title>Buscar Profesor</title>
+</head>
+<body>
+    <nav class="nav-menu">
+        <div>
+            <p>My Teacher</p>
+        </div>
+        <div>
+            <button id="botonH"><img src="../img/botonH.png" alt="botonH"></button>
+            <div id="dropdown-menu" class="dropdown-menu">
+                <a href="./login.html">Cerrar sesión</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="menu-buscarProfesor">
+        <p>Menu</p>
+        <div class="disponibilidad">
+            <div>
+                <img src="../img/horario.png" alt="horario">
+                <select name="disponibilidad" id="disponibilidad">
+                    <option value="" disabled selected>Disponibilidad</option>
+                    <option value="6:00">6:00</option>
+                    <option value="7:00">7:00</option>
+                    <option value="8:00">8:00</option>
+                    <option value="9:00">9:00</option>
+                    <option value="10:00">10:00</option>
+                    <option value="11:00">11:00</option>
+                    <option value="12:00">12:00</option>
+                    <option value="13:00">13:00</option>
+                    <option value="14:00">14:00</option>
+                    <option value="15:00">15:00</option>
+                    <option value="16:00">16:00</option>
+                    <option value="17:00">17:00</option>
+                    <option value="18:00">18:00</option>
+                    <option value="19:00">19:00</option>
+                    <option value="20:00">20:00</option>
+                </select>
+            </div>
+        </div>
+        <div class="disponibilidad">
+            <div>
+                <img src="../img/direccion.png" alt="materia">
+                <!-- <input type="text" value="Materia" id="materia">
+                <button id="enviar">Enter</button> -->
+                <input type="text" id="materiaInput" placeholder="Ingresa la materia" />
+                <button id="buscarButton">Buscar</button>
+                <div id="resultado"></div>
+            </div>  
+        </div>
+    </div>
+
+    <div class="profesores-menu1">
+        <p class="profesores">Profesores</p>
+        <div class="btnsFiltrados">
+            <button>Matematica</button>
+            <button>Lengua</button>
+            <button>Filosofia</button>
+            <button>Quimica</button>
+            <button>Programacion</button>
+            <button>Estadistica</button>
+        </div>
+        <div class="scroll-profesores"> 
+            <div class="design-profesor2">
+                <div class="profesor-design">
+                    <img src="../img/persona.png" alt="persona">
+                    <p>Ruben Larocca</p>
+                    <img src="../img/check-profesor.png" alt="check-profesor">
+                    <button class="btnVerProfesor" data-profesor="Ruben Larocca">Ver</button>
+                </div>
+                <div class="estrella-valoracion">
+                    <img src="../img/estrella-enNegro.png" alt="estrella-valoracion">  
+                    <img src="../img/estrella-enNegro.png" alt="estrella-valoracion">  
+                    <img src="../img/estrella-enNegro.png" alt="estrella-valoracion">  
+                    <img src="../img/estrella-enNegro.png" alt="estrella-valoracion">  
+                    <img src="../img/estrella-enNegro.png" alt="estrella-valoracion">  
+                </div>
+            </div>
+
+            <div class="design-profesor2">
+                <div class="profesor-design">
+                    <img src="../img/persona.png" alt="persona">
+                    <p>De Giorgio Luciano</p>
+                    <img src="../img/check-profesor.png" alt="check-profesor">
+                    <button class="btnVerProfesor" data-profesor="De Giorgio Luciano">Ver</button>
+                </div>
+                <div class="estrella-valoracion">
+                    <img src="../img/estrella-enNegro.png" alt="estrella-valoracion">  
+                    <img src="../img/estrella-enNegro.png" alt="estrella-valoracion">  
+                    <img src="../img/estrella-enNegro.png" alt="estrella-valoracion">  
+                    <img src="../img/estrella-enNegro.png" alt="estrella-valoracion">  
+                    <img src="../img/estrella-enNegro.png" alt="estrella-valoracion">  
+                </div>
+            </div>
+
+            <div class="design-profesor2"> 
+                <div class="profesor-design">
+                    <img src="../img/persona.png" alt="persona">
+                    <p>Jose Martinez</p>
+                    <img src="../img/check-profesor.png" alt="check-profesor">
+                    <button class="btnVerProfesor" data-profesor="Jose Martinez">Ver</button>
+                </div>
+                <div class="estrella-valoracion">
+                    <img src="../img/estrella-enNegro.png" alt="estrella-valoracion">  
+                    <img src="../img/estrella-enNegro.png" alt="estrella-valoracion">  
+                    <img src="../img/estrella-enNegro.png" alt="estrella-valoracion">  
+                    <img src="../img/estrella-enNegro.png" alt="estrella-valoracion">  
+                    <img src="../img/estrella-enNegro.png" alt="estrella-valoracion">  
+                </div>
+            </div>
+
+            <div class="design-profesor2">
+                <div class="profesor-design">
+                    <img src="../img/persona.png" alt="persona">
+                    <p>Griselda Fernandez</p>
+                    <img src="../img/check-profesor.png" alt="check-profesor">
+                    <button class="btnVerProfesor" data-profesor="Griselda Fernandez">Ver</button>
+                </div>
+                <div class="estrella-valoracion">
+                    <img src="../img/estrella-enNegro.png" alt="estrella-valoracion">  
+                    <img src="../img/estrella-enNegro.png" alt="estrella-valoracion">  
+                    <img src="../img/estrella-enNegro.png" alt="estrella-valoracion">  
+                    <img src="../img/estrella-enNegro.png" alt="estrella-valoracion">  
+                    <img src="../img/estrella-enNegro.png" alt="estrella-valoracion">  
+                </div>
+            </div>
+
+            <div class="design-profesor2">
+                <div class="profesor-design">
+                    <img src="../img/persona.png" alt="persona">
+                    <p>Franco Formigo</p>
+                    <img src="../img/check-profesor.png" alt="check-profesor">
+                    <button class="btnVerProfesor" data-profesor="Franco Formigo">Ver</button>
+                </div>
+                <div class="estrella-valoracion">
+                    <img src="../img/estrella-enNegro.png" alt="estrella-valoracion">  
+                    <img src="../img/estrella-enNegro.png" alt="estrella-valoracion">  
+                    <img src="../img/estrella-enNegro.png" alt="estrella-valoracion">  
+                    <img src="../img/estrella-enNegro.png" alt="estrella-valoracion">  
+                    <img src="../img/estrella-enNegro.png" alt="estrella-valoracion">  
+                </div>
+            </div>
+
+            <div class="design-profesor2">
+                <div class="profesor-design">
+                    <img src="../img/persona.png" alt="persona">
+                    <p>Joaquin Villanueva</p>
+                    <img src="../img/check-profesor.png" alt="check-profesor">
+                    <button class="btnVerProfesor" data-profesor="Joaquin Villanueva">Ver</button>
+                </div>
+                <div class="estrella-valoracion">
+                    <img src="../img/estrella-enNegro.png" alt="estrella-valoracion">  
+                    <img src="../img/estrella-enNegro.png" alt="estrella-valoracion">  
+                    <img src="../img/estrella-enNegro.png" alt="estrella-valoracion">  
+                    <img src="../img/estrella-enNegro.png" alt="estrella-valoracion">  
+                    <img src="../img/estrella-enNegro.png" alt="estrella-valoracion">  
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-design">
+            <a href="./menuEstudiante.html"><img src="../img/home.png" alt="home"></a>
+        </div>
+    </footer>
+
+    <script src="../controladores/buscarProfesor.js"></script>
+</body>
+</html>

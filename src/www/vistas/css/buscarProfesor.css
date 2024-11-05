@@ -1,0 +1,175 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+.nav-menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 4%;
+    color: #1D4D4F;
+}
+.nav-menu p{
+    font-weight: 600;
+}
+.nav-menu button{
+    border: none;
+    background-color: white;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    z-index: 10;
+}
+
+.dropdown-menu a {
+    color: #333;
+    text-decoration: none;
+    padding: 5px 10px;
+    display: block;
+}
+
+.dropdown-menu a:hover {
+    background-color: #bbbbbb;
+}
+
+.menu-buscarProfesor{
+    box-shadow: 0 -5px 5px rgba(0, 0, 0, 0.1);
+}
+.menu-buscarProfesor p{
+    font-weight: 600;
+    padding: 4%;
+}
+
+.disponibilidad{
+    margin: 4%;
+    border-radius: 15px;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+}
+.disponibilidad div{
+    display: flex;
+    align-items: center;
+}
+.disponibilidad img{
+    width: 51px;
+    padding: 8px
+}
+.disponibilidad select{
+    margin: 4%;
+    padding: 11px;
+    border: 3px solid rgba(0, 0, 0, 0.3);
+    width: 81%;
+    border-width: 2px;
+    border-radius: 18px;
+    color: rgba(0, 0, 0, 0.5);
+}
+.disponibilidad input{
+    margin: 4%;
+    padding: 11px;
+    border: 3px solid rgba(0, 0, 0, 0.3);
+    width: 81%;
+    border-width: 2px;
+    border-radius: 18px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.btnVerProfesor{
+    background-color: #4AA366;
+    color: black;
+    width: 23%;
+    margin-top: 12px;
+    height: 28px;
+    margin: 19px;
+    border-radius: 4px;
+    border: none;
+    color: white;
+}
+.profesor-design{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.estrella-valoracion{
+    display: flex;
+    flex-direction: row;
+    margin-left: 17%;
+    margin-top: -17px;
+}
+.estrella-valoracion img{
+    width: 18px;
+}
+
+.profesores{
+    margin-left: 5%;
+    font-weight: 600;
+    margin-top: 30px;
+    padding-top: 10px;
+}
+
+.profesores-menu1{
+
+    box-shadow: 0 2px 30px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+
+}
+
+.design-profesor2{
+    padding-bottom: 10px;
+    margin-bottom: 2px;
+}
+
+.btnsFiltrados{
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 10px;
+}
+.btnsFiltrados button{
+    padding: 11px;
+    color: black;
+    width: 29%;
+    margin-top: 12px;
+    height: 38px;
+    margin: 5px;
+    border-radius: 4px;
+    border: none;
+}
+
+.footer{
+    border-radius: 20px 20px 0 0;
+    box-shadow: 0 2px 30px rgba(0, 0, 0, 0.30);
+    background-color: white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.scroll-profesores{
+    max-height: 386px;
+    overflow-y: auto;
+}
+
+.footer-design{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 9px;
+}
+.footer-design img{
+    width: 40px;
+}
+
+

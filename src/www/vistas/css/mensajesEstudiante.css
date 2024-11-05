@@ -1,0 +1,88 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+.nav-menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 13px;
+    color: #1D4D4F;
+    background-color: #DFE4EC;
+}
+.nav-menu p{
+    font-weight: 600;
+}
+.nav-menu button{
+    border: none;
+    background-color: #DFE4EC;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    z-index: 10;
+}
+
+.dropdown-menu a {
+    color: #333;
+    text-decoration: none;
+    padding: 5px 10px;
+    display: block;
+}
+
+.dropdown-menu a:hover {
+    background-color: #f0f0f0;
+}
+
+.chat-list {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.chat-item {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+    box-shadow: 0 -5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.chat-item:hover {
+    background-color: #f0f0f0;
+}
+
+.footer{
+    border-radius: 20px 20px 0 0;
+    box-shadow: 0 2px 30px rgba(0, 0, 0, 0.30);
+    background-color: white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.scroll-profesores{
+    max-height: 371px;
+    overflow-y: auto;
+}
+
+.footer-design{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 9px;
+}
+.footer-design img{
+    width: 40px;
+}

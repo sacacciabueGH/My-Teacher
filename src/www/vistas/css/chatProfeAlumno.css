@@ -1,0 +1,136 @@
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+.nav-menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #DFE4EC;
+    padding: 15px;
+    color: #1D4D4F;
+}
+.nav-menu p{
+    font-weight: 600;
+}
+.nav-menu button{
+    background-color: #DFE4EC;
+}
+.nav-menu button{
+    border: none;
+}
+
+.icono-notificacion{
+    width: 24px;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    z-index: 10;
+}
+
+.dropdown-menu a {
+    color: #333;
+    text-decoration: none;
+    padding: 5px 10px;
+    display: block;
+}
+
+.dropdown-menu a:hover {
+    background-color: #bbbbbb;
+}
+
+
+#chat {
+    height: 82vh;
+    /* width: 400px; */
+    border: 0.1px solid #ccc;
+    /* border-radius: 8px; */
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+#mensajes {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+    background-color: #EFF4FD;
+}
+
+.mensaje {
+    padding: 8px;
+    margin: 5px;
+    border-radius: 5px;
+    max-width: 70%;
+}
+
+.mensaje.enviado {
+    background-color: #DFE4EC;
+    align-self: flex-end;
+    text-align: right;
+    margin-left: auto;
+}
+
+.mensaje.recibido {
+    background-color: #4AA366;
+    align-self: flex-start;
+    text-align: left;
+    margin-right: auto; 
+}
+
+#input-area {
+    display: flex;
+    border-top: 1px solid #ddd;
+}
+
+#mensaje-input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    resize: none;
+    outline: none;
+}
+
+#btn-enviar {
+    padding: 10px;
+    border: none;
+    background-color: #4AA366;
+    color: white;
+    cursor: pointer;
+}
+
+
+.footer{
+    border-radius: 20px 20px 0 0;
+    box-shadow: 0 2px 30px rgba(0, 0, 0, 0.30);
+    margin-top: -11px;
+    background-color: #ffffff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.footer-design{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 9px;
+}
+.footer-design img{
+    width: 40px;
+}

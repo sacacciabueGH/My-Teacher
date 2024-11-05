@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/icono.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/chatProfeAlumno.css">
+    <title>Chat</title>
+</head>
+<body>
+    
+    <nav class="nav-menu">
+        <div class="nombre-alumno">
+            <p>Chat</p>
+        </div>
+        <div>
+            <button id="botonH"><img src="../img/botonH.png" alt="botonH"></button>
+            <div id="dropdown-menu" class="dropdown-menu">
+                <a href="./login.html">Cerrar sesión</a>
+            </div>
+        </div>
+    </nav>
+
+    <div id="chat">
+        <div id="mensajes"></div>
+        <div id="input-area">
+            <textarea id="mensaje-input" placeholder="Escribe tu mensaje..."></textarea>
+            <button id="btn-enviar">Enviar</button>
+        </div>
+    </div>
+
+
+
+    <footer class="footer">
+        <div class="footer-design">
+            <a href="./menuProfesor.html"><img src="../img/home.png" alt="home"></a>
+        </div>
+    </footer>
+
+    <script src="../controladores/chatProfeAlumno.js"></script>
+</body>
+</html>

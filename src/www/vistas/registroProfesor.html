@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/icono.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/registro.css">
+    <title>Registro Profesor</title>
+</head>
+<body>
+    <a href="./registro.html"><img  class="atras" src="../img/atras.png" alt="atras"></a>
+    <h1 class="login_h1">Crea tu perfil de Profesor</h1>
+    <div class="inputs_login">
+        <form action="" id="form-register">
+            <label>
+                <input type="email" name="email" id="email" placeholder="E-mail">
+            </label>
+            <br>
+            <label>
+                <input type="password" name="password" id="password" placeholder="Password">
+            </label>
+            <br>
+            <label>
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+            </label>
+            <br>
+           <label>
+                <input type="text" name="apellido" id="apellido" placeholder="Apellido">
+           </label>
+            <br>
+            <label>
+                <input type="text" name="ciudad" id="ciudad" placeholder="Ciudad">
+            </label>
+            <br>
+            <label>
+                <select name="disponibilidad" id="disponibilidad">
+                    <option value="" disabled selected>Disponibilidad</option>
+                    <option value="6:00">6:00</option>
+                    <option value="7:00">7:00</option>
+                    <option value="8:00">8:00</option>
+                    <option value="9:00">9:00</option>
+                    <option value="10:00">10:00</option>
+                    <option value="11:00">11:00</option>
+                    <option value="12:00">12:00</option>
+                    <option value="13:00">13:00</option>
+                    <option value="14:00">14:00</option>
+                    <option value="15:00">15:00</option>
+                    <option value="16:00">16:00</option>
+                    <option value="17:00">17:00</option>
+                    <option value="18:00">18:00</option>
+                    <option value="19:00">19:00</option>
+                    <option value="20:00">20:00</option>
+                </select>
+            </label>
+            <br>
+            <label>
+                <input type="text" name="direccion" id="direccion" placeholder="Direccion">
+            </label>
+            <br>
+            <label>
+                <input type="tel" name="telefono" id="telefono" placeholder="Telefono">
+            </label>
+            <br>
+            <label id="registro_de_materias">
+                <p id="textos_forms">Ingrese una materia por campo</p>
+                <input type="text" name="materias[]" id="materias" placeholder="Materia a enseñar">
+            </label>
+            <button id="agregar_materia">+</button>
+            <br>
+            <p class="añadirFotoRegistro">Añade una foto de perfil y una descripcion propia</p>
+             
+             <div class="profile-upload">
+                <input type="file" id="file-upload" accept="image/*">
+                <label for="file-upload">+</label>
+                <textarea name="descripcion" id="descripcion" placeholder="Descripción"></textarea>
+            </div>
+            <br>
+        
+            <div class="btnCrearCuenta">
+                <button type="submit" value="enviar" class="crear_cuenta">Crear usuario</button>
+            </div>
+            
+        </form>
+    </div>
+    <script src="../controladores/index.js"></script>
+</body>
+</html>
