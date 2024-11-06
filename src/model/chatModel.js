@@ -1,4 +1,4 @@
-import db from '../config/db.js';
+import db from '../DB/db.js';
 
 export const guardarMensaje = (alumno_id, profesor_id, mensaje) => {
     return new Promise((resolve, reject) => {
