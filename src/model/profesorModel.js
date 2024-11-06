@@ -1,6 +1,10 @@
 import db from '../DB/db.js';
 
 export const crearProfesor = (profesor,callback) => {
+    if(profesor.email || profesor.password || profesor.materia || profesor.nombre || profesor.apellido === ""){
+        console.error("Campos invalidos");
+        callback(err,null);
+    }
     const query = 'INSERT INTO profesores (email, password, nombre, apellido, ciudad, direccion, telefono, materia, disponibilidad, descripcion, foto) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)';
     const values = [profesor.email, profesor.password, profesor.nombre, profesor.apellido, profesor.ciudad, profesor.direccion, profesor.telefono, profesor.materia, profesor.disponibilidad, profesor.descripcion, profesor.foto];
     db.query(query, values, (err, results) => {
