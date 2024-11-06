@@ -1,7 +1,7 @@
 import { crearAlumno, obtenerAlumnos, obtenerAlumnoPorId } from '../model/alumnoModel.js';
 
 export const registrarAlumno = (req, res) => {
-    const { alumno} = req.body;
+    const alumno = req.body;
     crearAlumno(alumno, (err) => {
         if (err) return res.status(500).send(err);
         res.send('Alumno creado con exito!',{ alumno });
