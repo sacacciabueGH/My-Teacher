@@ -18,3 +18,15 @@ export const obtenerAlumnoPorId = (id, callback) =>{
         callback(null,results[0]);
     })
 }
+
+export const logueoAlumno = (email, callback)=>{
+    const query = 'SELECT * FROM alumnos WHERE email = ?';
+    db.query(query,[email],(err,results)=>{
+        if(err){
+            console.error("Error al obtener email");
+            return callback(err,null);
+        }else{
+            callback(null,results);
+        } 
+    })
+}
