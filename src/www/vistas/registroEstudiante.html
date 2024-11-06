@@ -14,7 +14,7 @@
     <a href="./loginEstudiante.html"><img  class="atras" src="../img/atras.png" alt="atras"></a>
     <h1 class="login_h1">Crea tu perfil de Estudiante</h1>
     <div class="inputs_login">
-        <form action="">
+        <form action="" id="form-register">
             <label>
                 <input type="email" name="email" id="email" placeholder="E-mail">
             </label>
@@ -30,15 +30,6 @@
            <label>
                 <input type="text" name="apellido" id="apellido" placeholder="Apellido">
            </label>
-            <br>
-            <label for="nivelEducativo">
-                <select name="niveles" id="niveles">
-                    <option value="" disabled selected>Nivel Academico</option>
-                    <option value="secundario">Secundario</option>
-                    <option value="terciario">Terciario</option>
-                    <option value="universitario">Universitario</option>
-                </select>
-            </label>
             <br>
             <label for="">
                 <input type="text" name="ciudad" id="ciudad" placeholder="Ciudad">
@@ -59,5 +50,7 @@
             
         </form>
     </div>
+
+    <script src="../controladores/registroEstudiante.js"></script>
 </body>
 </html>

@@ -12,7 +12,7 @@ document.getElementById("form-register").addEventListener('submit', async functi
         telefono: document.getElementById("telefono").value,
         materia: document.getElementById("materias").value,
         disponibilidad: document.getElementById("disponibilidad").value,
-        descripcion: document.getElementById("descripcion").value,
+        descripcion: document.getElementById("descripcion").value
     };
 
     try {
