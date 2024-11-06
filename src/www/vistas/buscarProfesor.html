@@ -51,44 +51,30 @@
         </div>
         <div class="disponibilidad">
             <div>
-                <img src="../img/materia.png" alt="materia">
-                <!-- <input type="text" value="Materia" id="materia">
-                <button id="enviar">Enter</button> -->
+                <img id="img-materia" src="../img/materia.png" alt="materia">
                 <input type="text" id="materiaInput" placeholder="Ingresa la materia" />
                 <button class="buscarMateria" id="buscarMateria">Buscar</button>
-                <div id="resultado"></div>
-            </div>  
+            </div> 
         </div>
+        <div id="resultado"></div> 
     </div>
 
     <div class="profesores-menu1">
         <p class="profesores">Profesores</p>
-        <div class="btnsFiltrados">
-            <button>Matematica</button>
-            <button>Lengua</button>
-            <button>Filosofia</button>
-            <button>Quimica</button>
-            <button>Programacion</button>
-            <button>Estadistica</button>
+        <div class="btnsFiltrados" id="btnBuscarMaterias">
+            <button value="Matematica">Matematica</button>
+            <button value="Base de Datos">Base de Datos</button>
+            <button value="Filosofia">Filosofia</button>
+            <button value="Quimica">Quimica</button>
+            <button value="Programacion">Programacion</button>
+            <button value="Estadistica">Estadistica</button>
         </div>
         <div class="scroll-profesores"> 
-            <div class="design-profesor2">
-                <div class="profesor-design">
-                    <img src="../img/persona.png" alt="persona">
-                    <p>Ruben Larocca</p>
-                    <img src="../img/check-profesor.png" alt="check-profesor">
-                    <button class="btnVerProfesor" data-profesor="Ruben Larocca">Ver</button>
-                </div>
-                <div class="estrella-valoracion">
-                    <img src="../img/estrella-enNegro.png" alt="estrella-valoracion">  
-                    <img src="../img/estrella-enNegro.png" alt="estrella-valoracion">  
-                    <img src="../img/estrella-enNegro.png" alt="estrella-valoracion">  
-                    <img src="../img/estrella-enNegro.png" alt="estrella-valoracion">  
-                    <img src="../img/estrella-enNegro.png" alt="estrella-valoracion">  
-                </div>
+            <div class="design-profesor2" id="modal-profesores">
+             
             </div>
 
-            <div class="design-profesor2">
+            <!-- <div class="design-profesor2">
                 <div class="profesor-design">
                     <img src="../img/persona.png" alt="persona">
                     <p>De Giorgio Luciano</p>
@@ -166,7 +152,7 @@
                     <img src="../img/estrella-enNegro.png" alt="estrella-valoracion">  
                     <img src="../img/estrella-enNegro.png" alt="estrella-valoracion">  
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
 
