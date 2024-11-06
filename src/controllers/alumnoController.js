@@ -1,4 +1,5 @@
 import { crearAlumno, obtenerAlumnos, obtenerAlumnoPorId } from '../model/alumnoModel.js';
+import bcrypt from 'bcrypt';
 
 export const registrarAlumno = async (req, res) => {
     const alumno = req.body;
@@ -10,7 +11,7 @@ export const registrarAlumno = async (req, res) => {
                 console.error("Error al crear el alumno:", err);
                 return res.status(500).send({ error: JSON.stringify(err) });
             }
-            res.status(200).send({ message: 'Alumno creado con éxito!', profesor });
+            res.status(200).send({ message: 'Alumno creado con éxito!', alumno });
         });
 
     } catch (error) {

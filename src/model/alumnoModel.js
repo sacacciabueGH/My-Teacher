@@ -7,7 +7,7 @@ export const crearAlumno = (alumno,callback) => {
     db.query(query, values,callback);
 };
 
-export const obtenerAlumnos = () => {
+export const obtenerAlumnos = (callback) => {
     db.query('SELECT * FROM alumnos',callback);
 };
 
