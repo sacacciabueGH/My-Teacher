@@ -15,3 +15,40 @@ export const guardarMensaje = (alumno_id, profesor_id, mensaje) => {
         });
     });
 };
+
+export const obtenerMensajes = (req, res) => {
+    const { alumno_id, profesor_id } = req.params;
+
+    const query = `
+        SELECT * FROM chat 
+        WHERE alumno_id = ? AND profesor_id = ?
+        ORDER BY iniciado_en ASC
+    `;
+
+    db.query(query, [alumno_id, profesor_id], (error, resultados) => {
+        if (error) {
+            console.error("Error al obtener mensajes:", error);
+            return res.status(500).json({ error: 'Error al obtener mensajes' });
+        }
+        res.status(200).json(resultados);
+    });
+};
+
+export const obtenerChatsProfesor = (req, res) => {
+    const { profesor_id } = req.params;
+    const query = `
+        SELECT alumno_id, mensaje, iniciado_en
+        FROM chat
+        WHERE profesor_id = ?
+        GROUP BY alumno_id
+        ORDER BY iniciado_en DESC
+    `;
+
+    db.query(query, [profesor_id], (error, resultados) => {
+        if (error) {
+            console.error("Error al obtener los chats:", error);
+            return res.status(500).json({ error: 'Error al obtener los chats' });
+        }
+        res.status(200).json(resultados);
+    });
+};

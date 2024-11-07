@@ -14,7 +14,7 @@ export const obtenerProfesores = (callback) => {
 };
 
 export const obtenerProfesorPorId = (id, callback) => {
-    const query = 'SELECT nombre,apellido,email FROM profesores WHERE id = ?';
+    const query = 'SELECT id,email,nombre,apellido,ciudad,direccion,telefono,materia,disponibilidad,descripcion,foto FROM profesores WHERE id = ?';
     db.query(query, [id], (err, results) => {
         if (err) return callback(err, null);
         callback(null, results[0]); 

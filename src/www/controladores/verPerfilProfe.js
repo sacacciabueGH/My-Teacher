@@ -1,20 +1,32 @@
-const nombreProfesor = localStorage.getItem('profesorSeleccionado');
-
-if(nombreProfesor){
-    document.querySelector('.nombre-profesor p').textContent = nombreProfesor;
-
-
-    // localStorage.removeItem('profesorSeleccionado');
-}
-
+const idProfesor = localStorage.getItem('profesorSeleccionado');
 
 document.querySelector("#contactar-profesor").addEventListener("click",function (){
-    const nombreProfesor = document.getElementById("nombre-profesor").textContent;
-
-    localStorage.setItem('nombreProfesor', nombreProfesor);
-
     window.location.href = 'chatAlumnoProfe.html';
 })
+
+const nombreProfesor = document.getElementById("nombre-profesor");
+const descripcionProfesor = document.getElementById("descripcion-profesor");
+const materias = document.getElementById("materias");
+
+const obtenerProfesorPorId = (idProfesor) => {
+    return fetch(`http://localhost:8080/profesores/${idProfesor}`)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Error al obtener el profesor por ID: ' + response.statusText);
+            }
+            return response.json(); // Retorna el profesor
+        });
+};
+
+const cargarDatos = async () =>{
+    const profesor = await obtenerProfesorPorId(idProfesor);
+    nombreProfesor.innerHTML = `${profesor.nombre} ${profesor.apellido}`
+    descripcionProfesor.innerHTML = `${profesor.descripcion}`
+    materias.innerHTML = `${profesor.materia}`
+    
+}
+
+cargarDatos();
 
 
 

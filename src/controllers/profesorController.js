@@ -84,9 +84,16 @@ export const loguearProfesor = (req,res)=>{
             .then(results => {
                 console.log(results)
                 let user = {
+                    id: profesor[0].id,
                     email: profesor[0].email,
                     nombre: profesor[0].nombre,
-                    apellido: profesor[0].apellido
+                    apellido: profesor[0].apellido,
+                    telefono: profesor[0].telefono,
+                    direccion: profesor[0].direccion,
+                    ciudad: profesor[0].ciudad,
+                    materia:profesor[0].materia,
+                    disponibilidad:profesor[0].disponibilidad,
+                    foto:profesor[0].foto
                 }
                 res.send(user);
             })

@@ -56,9 +56,13 @@ export const loguearAlumno = (req,res)=>{
             .then(results => {
                 console.log(results)
                 let user = {
+                    id: alumno[0].id,
                     email: alumno[0].email,
                     nombre: alumno[0].nombre,
-                    apellido: alumno[0].apellido
+                    apellido: alumno[0].apellido,
+                    telefono: alumno[0].telefono,
+                    direccion: alumno[0].direccion,
+                    ciudad: alumno[0].ciudad
                 }
                 res.send(user);
             })

@@ -14,7 +14,7 @@ document.getElementById("login-form").addEventListener("submit", async function(
         const data = await response.json();
         console.log(data);
         if(response.ok){
-            localStorage.setItem('data', data);
+            localStorage.setItem('data', JSON.stringify(data));
             alert('Login exitoso como Profesor');
             window.location.href = 'menuProfesor.html';
         }else{

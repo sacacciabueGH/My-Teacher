@@ -68,7 +68,7 @@ const buscarProfesoresDetallesPorMateria = async (materia) => {
                 <img src="../img/persona.png" alt="persona">
                 <p>${profesor.nombre} ${profesor.apellido}</p> <!-- Aquí es donde añades el nombre del profesor -->
                 <img src="../img/check-profesor.png" alt="check-profesor">
-                <button class="btnVerProfesor" data-profesor="${profesor.nombre} ${profesor.apellido}">Ver</button>
+                <button class="btnVerProfesor" data-profesor="${profesor.id}">Ver</button>
             </div>
             <div class="estrella-valoracion">
                 <img src="../img/estrella-enNegro.png" alt="estrella-valoracion">  
@@ -77,13 +77,14 @@ const buscarProfesoresDetallesPorMateria = async (materia) => {
                 <img src="../img/estrella-enNegro.png" alt="estrella-valoracion">  
                 <img src="../img/estrella-enNegro.png" alt="estrella-valoracion">  
             </div>`;
+            localStorage.setItem('idProfesor',profesor.id)
         })
         
         document.querySelectorAll(".btnVerProfesor").forEach(button =>{
             button.addEventListener('click', function(){
-                const nombreProfesor = this.getAttribute('data-profesor');
+                const idProfesor = this.getAttribute('data-profesor');
         
-                localStorage.setItem('profesorSeleccionado', nombreProfesor);
+                localStorage.setItem('profesorSeleccionado', idProfesor);
         
                 window.location.href = 'verPerfilProfe.html';
             })
@@ -181,7 +182,7 @@ const buscarProfesoresDetallesPorHorario = async (disponibilidad) => {
                     <img src="../img/persona.png" alt="persona">
                     <p>${profesor.nombre} ${profesor.apellido}</p> <!-- Aquí es donde añades el nombre del profesor -->
                     <img src="../img/check-profesor.png" alt="check-profesor">
-                    <button class="btnVerProfesor" data-profesor="${profesor.nombre} ${profesor.apellido}">Ver</button>
+                    <button class="btnVerProfesor" data-profesor="${profesor.id}">Ver</button>
                 </div>
                 <div class="estrella-valoracion">
                     <img src="../img/estrella-enNegro.png" alt="estrella-valoracion">  
@@ -195,9 +196,9 @@ const buscarProfesoresDetallesPorHorario = async (disponibilidad) => {
 
         document.querySelectorAll(".btnVerProfesor").forEach(button =>{
             button.addEventListener('click', function(){
-                const nombreProfesor = this.getAttribute('data-profesor');
+                const idProfesor = this.getAttribute('data-profesor');
         
-                localStorage.setItem('profesorSeleccionado', nombreProfesor);
+                localStorage.setItem('profesorSeleccionado', idProfesor);
         
                 window.location.href = 'verPerfilProfe.html';
             })
