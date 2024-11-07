@@ -1,3 +1,11 @@
+const data = localStorage.getItem('data');
+
+if (data) {
+    console.log('Bienvenido, ' + data);
+} else {
+    console.log('No se encontró el email en el localStorage');
+}
+
 document.querySelectorAll(".btnVerProfesor").forEach(button =>{
     button.addEventListener('click', function(){
         const nombreProfesor = this.getAttribute('data-profesor');
